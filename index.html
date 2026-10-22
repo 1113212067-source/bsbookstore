@@ -1,17 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>文 · 書店</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
 </head>
+
 <body>
     <h1>文·書店</h1>
     <p>歡迎蒞臨</p>
     <p>Bienvenue</p>
+
+    <!-- 輪播圖 -->
+
+    <div id="carouselStackedIndicators" class="carousel slide">
+        <div class="carousel-inner rounded-5">
+            <div class="carousel-item active">
+                <img src="https://picsum.photos/id/78/1200/300" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://picsum.photos/id/84/1200/300" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://picsum.photos/id/87/1200/300" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://picsum.photos/id/122/1200/300" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://picsum.photos/id/124/1200/300" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://picsum.photos/id/142/1200/300" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStackedIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-icon-prev" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="btn-icon btn-sm" type="button" data-bs-target="#carouselStackedIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-icon-next" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselStackedIndicators" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
